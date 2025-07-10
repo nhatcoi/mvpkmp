@@ -1,3 +1,13 @@
 package com.nhatdev.newskmp.data.model
 
-data class Source()
+
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Source(
+    @SerialName("id")
+    val id: String?,
+    @SerialName("name")
+    val name: String
+)
